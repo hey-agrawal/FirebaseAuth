@@ -18,11 +18,11 @@ import com.example.firebaseauth.presentation.AuthScreen
 import com.example.firebaseauth.ui.theme.FirebaseAuthTheme
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
+@ExperimentalCoroutinesApi
+@ExperimentalFoundationApi
+@ExperimentalAnimationApi
+@ExperimentalMaterialApi
 class MainActivity : ComponentActivity() {
-    @ExperimentalCoroutinesApi
-    @ExperimentalFoundationApi
-    @ExperimentalAnimationApi
-    @ExperimentalMaterialApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

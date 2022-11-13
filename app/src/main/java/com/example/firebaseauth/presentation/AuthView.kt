@@ -31,8 +31,6 @@ onClick:() -> Unit){
                     Spacer(modifier = Modifier.height(30.dp))
                     Text(text = it)
                 }
-
-
         }
     }
 }
@@ -55,7 +53,7 @@ fun AuthScreen(authViewModel: AuthViewModel){
                     text = "Google sign in failed"
                 }else{
                     coroutineScope.launch {
-                        authViewModel.signIn(email = account.email, displayName = account.displayName)
+                        authViewModel.signIn(email = account.email!!, displayName = account.displayName!!)
                     }
                 }
             }catch (e:ApiException){

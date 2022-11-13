@@ -19,10 +19,12 @@ fun  HomeScreen(user: User){
         .fillMaxSize()
         .padding(innerPadding),
     verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally ) {
-        Text(text = "hello,${user.displayName}",
-        FontWeight = FontWeight.Bold,
-        style = MaterialTheme.typography.h4,
-            fontSize = 30.sp)
+        Text(
+            text = "hello,${user.displayName}",
+            fontWeight = FontWeight.Bold,
+            style = MaterialTheme.typography.h4,
+            fontSize = 30.sp
+        )
         Spacer(modifier = Modifier.height(10.dp))
         Text(text = user.email)
 
